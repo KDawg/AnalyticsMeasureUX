@@ -4,46 +4,56 @@
   <title>Measuring the User Experience: The Analytics of UX</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      font-size: 1.25em;
-      padding: 0.75em;
-    }
-  </style>
+  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-<h1>Measuring the User Experience</h1>
-<h2>The Analytics of UX</h2>
-<p>This is a simple demo web app offering a place to practice <strong>active
-  analytics</strong>.
-  What you'll see here is:
-<ul>
-  <li>A few UI elements serving as interaction points.</li>
-  <li>JavaScript functions attached to <em>change</em> and <em>click</em> DOM events.</li>
-  <li>Use of Google Analytics to actively track events.</li>
-</ul>
-<p>Using these concepts you'll build webapps, measure exactly how they're used, and learn
-  what parts are used most often by your customers.</p>
+<h1>Second Bank of Texas</h1>
 
-<h4>COLOR</h4>
-<select id="color-choices">
-  <option value="red">Red</option>
-  <option value="orange">Orange</option>
-  <option value="yellow">Yellow</option>
-  <option value="green">Green</option>
-  <option value="blue">Blue</option>
-  <option value="indigo">Indigo</option>
-  <option value="violet">Violet</option>
-</select>
+<div class="content">
+  <h2>Welcome</h2>
+  <p>Since 1866 our goal has been serving your personal financial needs for peace of mind.
+    When you bank with us you know that your money is safe.</p>
 
-<p>We just saw a concrete example of event tracking with a drop-down selection widget.
-  Next let's try interacting with another typical UI element - a button.</p>
+  <h2>Convenience</h2>
+  <p>Our website let's you access your resources any time you want. View detailed record
+    keeping and expense tracking wherever you need. We're ready when you are.</p>
 
-<h4>SUBMIT</h4>
-<p>Finished choosing your color? Press the accept button and confirm it.</p>
-<button id="btn-accept">Accept!</button>
+  <section class="account-panel">
+    <div class="account-item">
+      <h3>Select Your Account</h3>
+      <select id="account-choices">
+        <option value="checking">Checking</option>
+        <option value="savings">Savings</option>
+        <option value="money_market">Money Market</option>
+        <option value="ira">IRA</option>
+      </select>
+      <button id="btn-get-balance">See Balance</button>
+    </div>
 
+    <div class="account-item">
+      <h3>Open an Account</h3>
+      <select id="open-account-choices">
+        <option value="checking">Checking</option>
+        <option value="savings" selected="selected">Savings</option>
+        <option value="money_market">Money Market</option>
+        <option value="ira">IRA</option>
+      </select>
+      <button id="btn-get-started">Get Started</button>
+    </div>
+  </section>
+
+
+  <h2 class="news">News and Information</h2>
+  <p>We do the hard work to help make yours easier. Look to any of these popular choices
+    and discover how the Second Bank of Texas can help you achieve your banking goals
+    today.</p>
+  <ul>
+    <li>Tools and tips to manage your monthly bills.</li>
+    <li>Keep your investments on track.</li>
+    <li>Apply for a home improvement loan.</li>
+  </ul>
+</div>
 
 <script type="text/javascript" src="jquery-2.2.2.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
