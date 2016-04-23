@@ -1,0 +1,12 @@
+$darkblue: #0664BD;
+$darkgrey: #FAF8F5;
+
+$white: #fff;
+$red: #CE2437;
+$blue: #027CD5;
+$grey: #777;
+$black: #111;
+
+$linkNormalColor: $blue;
+$linkHoverColor: lighten($linkNormalColor, 15%);
+$linkClickColor: darken($linkNormalColor, 15%);
