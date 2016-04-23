@@ -10,6 +10,16 @@ h1 {
   font-size: 2.0em;
   margin: 0.25em 0 0.25em 0;
   text-align: center; }
+  @media screen and (max-width: 450px) {
+    h1 {
+      background-color: magenta;
+      font-size: 1.25em;
+      margin: 0.125em 0 0.125em 0; } }
+  @media screen and (min-width: 1200px) {
+    h1 {
+      background-color: orange;
+      font-size: 3.0em;
+      margin: 0.5em 0 0.5em 0; } }
 
 h2 {
   color: #CE2437;
