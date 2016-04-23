@@ -1,7 +1,7 @@
-$hugeWidth: 1500px;
-$largeWidth: 1200px;
-$mediumWidth: 960px;
-$smallWidth: 670px;
+$hugeWidth: 1400px;
+$largeWidth: 1024px;
+$mediumWidth: 768px;
+$smallWidth: 450px;
 
 
 @mixin minScreen($res) {
