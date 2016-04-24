@@ -89,8 +89,13 @@ select {
   margin-bottom: 1.25em;
 }
 
+img {
+  border: solid 2px $darkblue;
+  width: 100%;
+}
+
 .content {
-  background-color: $darkgrey;
+  background-color: $lightgrey;
   border-top: 1px solid #D8D1C5;
   padding: 0.5em;
 }
