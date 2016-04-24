@@ -59,7 +59,7 @@ button {
   display: block;
   font-size: 1.0em;
   letter-spacing: 0.05em;
-  margin-top: 0 auto;
+  margin: 0 auto;
   outline: none;
   padding: 0.5em 1.0em 0.5em 1.0em;
   text-align: center;
@@ -73,6 +73,11 @@ button:hover {
 
 button:active {
   background: $linkClickColor;
+}
+
+section {
+  clear: both;
+  margin: 0.25em 0 1.75em 0;
 }
 
 select {
@@ -90,16 +95,27 @@ select {
   padding: 0.5em;
 }
 
-.account-panel {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0.25em 0 1.75em 0;
+.account-item-row {
+  display: block;
+}
+
+.account-item-row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .account-item {
-  margin: 0.50em 3.0em 0.50em 3.0em;
+  float: left;
   text-align: center;
+  width: 50%;
+
+  @include maxScreen($smallWidth) {
+    float: inherit;
+    padding-bottom: 1.25em;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .news {
